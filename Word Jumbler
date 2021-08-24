@@ -1,0 +1,179 @@
+import random
+import time
+import sys
+
+from colorama import Back, Fore, Style
+
+from playsound import playsound
+
+
+def four_letters():
+      print(Fore.LIGHTMAGENTA_EX + "\nObjective: \nI am going to jumble a word and then you are going to try and guess it")
+      word_list = ['poop', 'care', 'grab', 'tart', 'bald', 'feel', 'mole', 'muck']
+      word_1 = random.choice(word_list)
+      domino = random.sample(word_1, len(word_1))
+      jumbled = ''.join(domino)
+      print("Ok, Here's your jumble: ", jumbled)
+      first_guess = input(Fore.RESET + "\nWhat's your first guess?:    ")
+      if first_guess == word_1:
+          print("Congrats you guessed it")
+          pookie_pants = input("Would you care to play again? (Y/N):    ")
+          if pookie_pants == "Y":
+                game_changer = input("Would you like to change her gamemode? (Y/N):     ")
+                if game_changer == "Y":
+                      game_moder = input("Gamemode:                        "
+                                        "\n         - Four letter word (1)"
+                                        "\n         - Five letter word (2)"
+                                        "\nChoice:     ")
+                      if game_moder == "1":
+                            four_letters()
+                      elif game_moder == "2":
+                            five_letters()
+                else:
+                      four_letters()
+          else:
+                print("Goodbye")
+      else:
+            print("Try Again")
+            second_guess = input(Fore.RESET + "\nWhat's your second guess?:    ")
+            if second_guess == word_1:
+                  print("Congrats you guessed it")
+                  pookier_pants = input("Would you care to play again? (Y/N):    ")
+                  if pookier_pants == "Y":
+                        game_changery = input("Would you like to change her gamemode? (Y/N):     ")
+                        if game_changery == "Y":
+                              game_modery = input("Gamemode:                        "
+                                                 "\n         - Four letter word (1)"
+                                                 "\n         - Five letter word (2)"
+                                                 "\nChoice:     ")
+                              if game_modery == "1":
+                                    four_letters()
+                              elif game_modery == "2":
+                                    five_letters()
+                        else:
+                              four_letters()
+                  else:
+                        print("Goodbye")
+            else:
+                  print("This is your last try")
+                  third_guess = input(Fore.RESET + "Whats your final guess?:    ")
+                  if third_guess == word_1:
+                        print("Congrats you guessed it")
+                        pookiery_pants = input("Would you care to play again? (Y/N):    ")
+                        if pookiery_pants == "Y":
+                              game_changer = input("Would you like to change her gamemode? (Y/N):     ")
+                              if game_changer == "Y":
+                                    game_moder = input("Gamemode:                        "
+                                                       "\n         - Four letter word (1)"
+                                                       "\n         - Five letter word (2)"
+                                                       "\nChoice:     ")
+                                    if game_moder == "1":
+                                          four_letters()
+                                    elif game_moder == "2":
+                                          five_letters()
+                              else:
+                                    four_letters()
+                        else:
+                              print("Goodbye")
+                  else:
+                        print("You were wrong")
+
+
+def five_letters():
+      print(Fore.LIGHTMAGENTA_EX + "\nObjective: \nI am going to jumble a word and then you are going to try and guess it")
+      word_listy = ['lemon', 'trench', 'gamer', 'corny', 'reset', 'booby', 'annie', 'crazy', 'melon', 'bundt', 'limpy', 'wrong', 'moral', 'chaos', 'calls']
+      word_1 = random.choice(word_listy)
+      domino = random.sample(word_1, len(word_1))
+      jumbled = ''.join(domino)
+      print("Ok, Here's your jumble: ", jumbled)
+      first_guess = input(Fore.RESET + "\nWhat's your first guess?:    ")
+      if first_guess == word_1:
+          print("Congrats you guessed it")
+          pookie_pants = input("Would you care to play again? (Y/N):    ")
+          if pookie_pants == "Y":
+                game_changer = input("Would you like to change her gamemode? (Y/N):     ")
+                if game_changer == "Y":
+                      game_moder = input("Gamemode:                        "
+                                        "\n         - Four letter word (1)"
+                                        "\n         - Five letter word (2)"
+                                        "\nChoice:     ")
+                      if game_moder == "1":
+                            four_letters()
+                      elif game_moder == "2":
+                            five_letters()
+                else:
+                      five_letters()
+          else:
+                print("Goodbye")
+      else:
+            print("Try Again")
+            second_guess = input(Fore.RESET + "\nWhat's your second guess?:    ")
+            if second_guess == word_1:
+                  print("Congrats you guessed it")
+                  pookier_pants = input("Would you care to play again? (Y/N):    ")
+                  if pookier_pants == "Y":
+                        game_changer = input("Would you like to change her gamemode? (Y/N):     ")
+                        if game_changer == "Y":
+                              game_moder = input("Gamemode:                        "
+                                                 "\n         - Four letter word (1)"
+                                                 "\n         - Five letter word (2)"
+                                                 "\nChoice:     ")
+                              if game_moder == "1":
+                                    four_letters()
+                              elif game_moder == "2":
+                                    five_letters()
+                        else:
+                              five_letters()
+                  else:
+                        print("Goodbye")
+            else:
+                  print("This is your last try")
+                  third_guess = input(Fore.RESET + "Whats your final guess?:    ")
+                  if third_guess == word_1:
+                        print("Congrats you guessed it")
+                        pookiery_pants = input("Would you care to play again? (Y/N):    ")
+                        if pookiery_pants == "Y":
+                              game_changer = input("Would you like to change her gamemode? (Y/N):     ")
+                              if game_changer == "Y":
+                                    game_moder = input("Gamemode:                        "
+                                                       "\n         - Four letter word (1)"
+                                                       "\n         - Five letter word (2)"
+                                                       "\nChoice:     ")
+                                    if game_moder == "1":
+                                          four_letters()
+                                    elif game_moder == "2":
+                                          five_letters()
+                              else:
+                                    five_letters()
+                        else:
+                              print("Goodbye")
+                  else:
+                        print("You were wrong")
+
+
+score = 0
+print(Fore.LIGHTGREEN_EX + "░██╗░░░░░░░██╗░█████╗░██████╗░██████╗░"
+      "\n░██║░░██╗░░██║██╔══██╗██╔══██╗██╔══██╗"
+      "\n░╚██╗████╗██╔╝██║░░██║██████╔╝██║░░██║"
+      "\n░░████╔═████║░██║░░██║██╔══██╗██║░░██║"
+      "\n░░╚██╔╝░╚██╔╝░╚█████╔╝██║░░██║██████╔╝"
+      "\n░░░╚═╝░░░╚═╝░░░╚════╝░╚═╝░░╚═╝╚═════╝░"
+      "\n         ░░░░░██╗██╗░░░██╗███╗░░░███╗██████╗░██╗░░░░░███████╗██████╗░"
+      "\n         ░░░░░██║██║░░░██║████╗░████║██╔══██╗██║░░░░░██╔════╝██╔══██╗"
+      "\n         ░░░░░██║██║░░░██║██╔████╔██║██████╦╝██║░░░░░█████╗░░██████╔╝"
+      "\n         ██╗░░██║██║░░░██║██║╚██╔╝██║██╔══██╗██║░░░░░██╔══╝░░██╔══██╗"
+      "\n         ╚█████╔╝╚██████╔╝██║░╚═╝░██║██████╦╝██████╗███████╗██║░░██║"
+      "\n         ░╚════╝░░╚═════╝░╚═╝░░░░░╚═╝╚═════╝░╚══════╝╚══════╝╚═╝░░╚═╝")
+print(Fore.RED + "\n                        Version 1.0")
+eleanor_skepel = input(Fore.LIGHTCYAN_EX + "          Welcome young traveler, what is your name?:     ")
+game_mode = input("Gamemode:                        "
+                  "\n         - Four letter word (1)"
+                  "\n         - Five letter word (2)"
+                  "\nChoice:     ")
+print("          Welcome ", eleanor_skepel, " its time to play")
+print("\n                        Loading . . .")
+time.sleep(3)
+if game_mode == "1":
+      four_letters()
+elif game_mode == "2":
+      five_letters()
